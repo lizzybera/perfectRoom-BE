@@ -7,7 +7,7 @@ exports.db = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
-const URL = process.env.STRING2;
+const URL = process.env.STRING;
 const db = () => {
     mongoose_1.default.connect(URL).then(() => {
         console.log("server is connected");

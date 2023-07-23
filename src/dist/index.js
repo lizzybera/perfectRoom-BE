@@ -12,7 +12,7 @@ const app = (0, express_1.default)();
 const realPort = parseInt(process.env.PORT_NO);
 const port = realPort;
 (0, mainApp_1.default)(app);
-const server = app.listen(port, () => {
+const server = app.listen(process.env.PORT || port, () => {
     console.log(port);
     (0, dataBase_1.db)();
 });
