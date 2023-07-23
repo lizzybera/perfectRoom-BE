@@ -11,7 +11,7 @@ const mainApp = (app: Application)=>{
             try {
                 
                 return res.status(200).json({
-                    message : "an error has occured" 
+                    message : "welcome" 
                 })
 
             } catch (error) {
