@@ -13,7 +13,7 @@ const mainApp = (app) => {
         .get("/", (req, res) => {
         try {
             return res.status(200).json({
-                message: "an error has occured"
+                message: "welcome"
             });
         }
         catch (error) {
